@@ -133,3 +133,11 @@ s3 :
         }
     ]
 }
+InsufficientEncryptionPolicyException: Insufficient permissions to access S3 bucket security or KMS key arn:aws:kms:eu-central-1:03188888888:key/829daf78-7658-4fbe-81c8-077e58455555. (Service: AWSCloudTrail; Status Code: 400; Error Code: InsufficientEncryptionPolicyException; Request ID: 261419b0-9999-4d34-84aa-e7d610b58e24; Proxy: null)
+│
+│   with module.cloudtrail.aws_cloudtrail.cloudtrail,
+│   on ..\..\..\modules\centralized_delegation\cloud_trail\main.tf line 1, in resource "aws_cloudtrail" "cloudtrail":
+│    1: resource "aws_cloudtrail" "cloudtrail" {
+│
+╵
+Releasing state lock. This may take a few moments...
